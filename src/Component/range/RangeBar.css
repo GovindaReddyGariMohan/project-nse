@@ -1,0 +1,92 @@
+.range-bar-container-column {
+  display: flex;
+  align-items: center;
+  /* Vertically align left info, track, and right info */
+  margin-bottom: 20px;
+  color: #333;
+  gap: 20px;
+  /* Spacing between the left info, track container, and right info */
+  padding: 10px;
+  /* Add some padding around the component */
+}
+
+.left-info,
+.right-info {
+  display: flex;
+  flex-direction: column;
+  /* Stack label and value vertically */
+  align-items: flex-start;
+  /* Align items to the left within the column */
+  width: auto;
+  /* Adjust width based on content */
+}
+
+.right-info {
+  align-items: flex-end;
+  /* Align items to the right within the column */
+}
+
+.label-low,
+.label-high {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 2px;
+  /* Spacing between label and value */
+}
+
+.value-low,
+.value-high {
+  font-weight: bold;
+}
+
+.track-container {
+  flex-grow: 1;
+  /* Allow the track to take up the remaining horizontal space */
+}
+
+.track {
+  background-color: #eee;
+  height: 8px;
+  position: relative;
+  border-radius: 4px;
+}
+
+.current-value-marker {
+  color: #007bff;
+  position: absolute;
+  bottom: -10px;
+  font-size: 1.5em;
+  transform: translateX(-50%);
+}
+
+.range-bar-left-right-price {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+  .range-bar-container-column {
+    flex-direction: column;
+    /* Stack everything vertically */
+    align-items: flex-start;
+    /* Left align on smaller screens */
+    gap: 15px;
+  }
+
+  .left-info,
+  .right-info {
+    align-items: flex-start; 
+   
+  }
+
+  .track-container {
+    width: 100%;
+    /* Make the track take full width */
+  }
+
+  .right-info {
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,54 @@
+.table-container {
+  max-height: 500px;
+  max-width: 100%;
+  overflow: auto;
+  border: 1px solid #ccc;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 1200px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  white-space: nowrap;
+  text-align: left;
+  font-size: 14px;
+}
+
+/* Sticky header */
+thead th {
+  position: sticky;
+  top: 0;
+  background: #f2f2f2;
+  z-index: 2;
+}
+
+/* Sticky first column */
+.sticky-left {
+  position: sticky;
+  left: 0;
+  background: #f9f9f9;
+  z-index: 1;
+}
+
+/* Top-left cell */
+thead .sticky-left {
+  z-index: 3;
+  background: #e2e2e2;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  th, td {
+    padding: 8px;
+    font-size: 13px;
+  }
+}
