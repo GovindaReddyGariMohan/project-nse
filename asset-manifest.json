@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/project-nse/static/css/main.3529916e.css",
+    "main.js": "/project-nse/static/js/main.3f790b46.js",
+    "static/js/453.419a5d54.chunk.js": "/project-nse/static/js/453.419a5d54.chunk.js",
+    "index.html": "/project-nse/index.html",
+    "main.3529916e.css.map": "/project-nse/static/css/main.3529916e.css.map",
+    "main.3f790b46.js.map": "/project-nse/static/js/main.3f790b46.js.map",
+    "453.419a5d54.chunk.js.map": "/project-nse/static/js/453.419a5d54.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3529916e.css",
+    "static/js/main.3f790b46.js"
+  ]
+}
