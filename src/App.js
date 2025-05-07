@@ -32,7 +32,7 @@ function App() {
           <Route path="/" element={ <StickyTable equities={equities}/>} />
           <Route path="/chart/:id" element={<Stockdetailspage/>} />
         </Routes>
-  
+   
     </div>
   );
 }

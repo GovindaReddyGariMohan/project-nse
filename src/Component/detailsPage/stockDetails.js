@@ -17,7 +17,7 @@ const Stockdetailspage = () => {
     const [loading, setLoading] = useState(true);
     const [marketCap, setMarketCap] = useState([])
     // const [error, setError] = useState(null);
-    console.log(id)
+   
     useEffect(() => {
         const fetchId = async () => {
             try {

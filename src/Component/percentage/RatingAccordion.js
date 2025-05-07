@@ -5,7 +5,7 @@ import BuySellRating from './BuySellrating';
 
 const RatingAccordion = ({ PriceData,marketCap }) => {
   const [isOpen, setIsOpen] = useState(true); // Open by default
-console.log(PriceData)
+
   return (
     <div className="accordion">
       <div className="accordion-item">
