@@ -25,7 +25,7 @@ const StickyTable = ({ equities }) => {
   console.log(filtered, 'companies')
   return (
     <>
-      <div style={{ maxWidth: 600, margin: '0 auto' }}>
+      <div className='search-bar'>
         <input
           type="text"
           placeholder="Search by company name or symbol"

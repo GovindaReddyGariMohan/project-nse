@@ -44,11 +44,18 @@ thead .sticky-left {
   z-index: 3;
   background: #e2e2e2;
 }
-
+.search-bar{
+  max-width: 600px;
+  margin: 0 auto;
+}
 /* Mobile adjustments */
 @media (max-width: 768px) {
   th, td {
     padding: 8px;
     font-size: 13px;
+  }
+  .search-bar{
+    max-width: 300px;
+    margin: 0 auto;
   }
 }
