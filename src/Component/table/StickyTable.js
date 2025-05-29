@@ -22,7 +22,7 @@ const StickyTable = ({ equities }) => {
         company?.symbol?.toLowerCase()?.includes(q)
       )
     );
-  }, [query,equities]);
+  }, [query, equities]);
 
   return (
     <>
@@ -48,9 +48,8 @@ const StickyTable = ({ equities }) => {
           ))}
           {filtered.length === 0 && <li>No results found.</li>}
         </ul> */}
-
       </div>
-      <div>
+      <div className='carosel-stock'>
         <TrendingHigh />
       </div>
       <div className="table-container">
@@ -155,6 +154,7 @@ const StickyTable = ({ equities }) => {
           </tbody>
         </table>
       </div>
+      
     </>
   );
 };

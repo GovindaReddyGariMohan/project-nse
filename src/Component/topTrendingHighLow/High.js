@@ -1,7 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import './trending.css'
-import { Link } from "react-router";
+import StockCarousel from "../carosel/Carosel";
+
 const TrendingHigh = () => {
     const [high, setHigh] = useState([])
     const [loading, setLoading] = useState(true);
@@ -16,27 +17,15 @@ const TrendingHigh = () => {
                 setLoading(false);
             }
         };
-
         fetchTrendingHigh();
     }, []);
-    if (high.length >= 1) {
-        return (
-            <div className="trending-high">
-            {
-                high.map((value, index) => {
-                    return (
-                        <div key={`high-${index}`} className="trending-high-items">
-                            <Link to={`/chart/${value.id}`}>{value?.symbol}</Link>
-                            <div className="change-percentage">+ {value?.percentageChangeHigh}</div>
-                        </div>
-                    )
-                })
-            }
+
+    return (
+        <div className="trending-high">
+            <StockCarousel high={high} />
         </div>
-        )
-    } else {
-       <div>Loading...</div>
-    }
+    )
+
 
 }
 
