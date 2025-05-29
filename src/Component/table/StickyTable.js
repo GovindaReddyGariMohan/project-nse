@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './StickyTable.css';
 import { Link } from 'react-router';
+import TrendingHigh from '../topTrendingHighLow/High';
 
 const columns = [
   'Name', 'LTP', 'Change %', 'Volume',
@@ -21,8 +22,8 @@ const StickyTable = ({ equities }) => {
         company?.symbol?.toLowerCase()?.includes(q)
       )
     );
-  }, [query]);
-  console.log(filtered, 'companies')
+  }, [query,equities]);
+
   return (
     <>
       <div className='search-bar'>
@@ -47,6 +48,10 @@ const StickyTable = ({ equities }) => {
           ))}
           {filtered.length === 0 && <li>No results found.</li>}
         </ul> */}
+
+      </div>
+      <div>
+        <TrendingHigh />
       </div>
       <div className="table-container">
         <table>

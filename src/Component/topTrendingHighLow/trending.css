@@ -1,0 +1,14 @@
+/* trending-high */
+.trending-high {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+}
+.trending-high-items{
+    border: solid 1px;
+    padding: 20px;
+    margin: 5px;
+}
+.change-percentage{
+    color: rgb(27, 212, 27);
+}

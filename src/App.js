@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import StickyTable from './Component/table/StickyTable';
 import axios from 'axios';
-import { BrowserRouter as Router, Routes, Route } from 'react-router';
+import { Routes, Route } from 'react-router';
 import Stockdetailspage from './Component/detailsPage/stockDetails';
+
 
 
 function App() {
